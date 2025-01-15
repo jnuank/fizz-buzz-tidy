@@ -4,14 +4,12 @@ class FizzBuzz {
     companion object {
         fun fizzBuzz(number: Int): String =
             when {
-                isThreeDivisible(number) && isFiveDivisible(number) -> "FizzBuzz"
-                isThreeDivisible(number) -> "Fizz"
-                isFiveDivisible(number) -> "Buzz"
+                number % 3 == 0 && number % 5 == 0 -> "FizzBuzz"
+                number % 3 == 0 -> "Fizz"
+                number % 5 == 0 -> "Buzz"
                 else -> number.toString()
             }
 
-        private fun isFiveDivisible(number: Int) = number % 5 == 0
-        private fun isThreeDivisible(number: Int) = number % 3 == 0
     }
 
 }
