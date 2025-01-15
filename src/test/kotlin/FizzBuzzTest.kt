@@ -26,6 +26,13 @@ class FizzBuzzTest {
         fun 数字6() {
             assertEquals("Fizz", FizzBuzz.fizzBuzz(6))
         }
+    }
 
+    @Nested
+    inner class 数字5の倍数の場合はBuzz() {
+        @Test
+        fun 数字5() {
+            assertEquals("Buzz", FizzBuzz.fizzBuzz(5))
+        }
     }
 }
