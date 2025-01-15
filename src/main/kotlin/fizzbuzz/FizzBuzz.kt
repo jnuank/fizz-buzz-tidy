@@ -3,9 +3,9 @@ package org.example.fizzbuzz
 class FizzBuzz {
     companion object {
         fun fizzBuzz(number: Int): String =
-            if (is3(number) && number % 5 == 0) {
+            if (isThreeDivisible(number) && number % 5 == 0) {
                 "FizzBuzz"
-            } else if (is3(number)) {
+            } else if (isThreeDivisible(number)) {
                 "Fizz"
             } else if (number % 5 == 0) {
                 "Buzz"
@@ -13,7 +13,7 @@ class FizzBuzz {
                 number.toString()
             }
 
-        private fun is3(number: Int) = number % 3 == 0
+        private fun isThreeDivisible(number: Int) = number % 3 == 0
     }
 
 }
