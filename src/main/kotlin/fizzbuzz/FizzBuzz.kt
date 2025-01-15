@@ -12,7 +12,5 @@ class FizzBuzz {
 
         private infix fun Int.isDivisibleBy(divisor: Int) = this % divisor == 0
         private infix fun Int.isDivisibleBy(divisors: Pair<Int, Int>) = this % divisors.first == 0 && this % divisors.second == 0
-
     }
-
 }
