@@ -1,4 +1,5 @@
 import org.example.fizzbuzz.FizzBuzz
+import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
@@ -14,13 +15,17 @@ class FizzBuzzTest {
         assertEquals("2", FizzBuzz.fizzBuzz(2))
     }
 
-    @Test
-    fun 数字3を渡したら文字列のFizzを返す() {
-        assertEquals("Fizz", FizzBuzz.fizzBuzz(3))
-    }
+    @Nested
+    inner class 数字3の倍数の場合はFizz() {
+        @Test
+        fun 数字3() {
+            assertEquals("Fizz", FizzBuzz.fizzBuzz(3))
+        }
 
-    @Test
-    fun 数字6を渡したら文字列のFizzを返す() {
-        assertEquals("Fizz", FizzBuzz.fizzBuzz(6))
+        @Test
+        fun 数字6() {
+            assertEquals("Fizz", FizzBuzz.fizzBuzz(6))
+        }
+
     }
 }
