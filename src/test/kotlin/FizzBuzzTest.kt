@@ -40,4 +40,12 @@ class FizzBuzzTest {
             assertEquals("Buzz", FizzBuzz.fizzBuzz(10))
         }
     }
+
+    @Nested
+    inner class 数字3かつ5の倍数の場合はFizzBuzz() {
+        @Test
+        fun 数字15() {
+            assertEquals("FizzBuzz", FizzBuzz.fizzBuzz(15))
+        }
+    }
 }
