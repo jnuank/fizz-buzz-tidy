@@ -18,4 +18,9 @@ class FizzBuzzTest {
     fun 数字3を渡したら文字列のFizzを返す() {
         assertEquals("Fizz", FizzBuzz.fizzBuzz(3))
     }
+
+    @Test
+    fun 数字6を渡したら文字列のFizzを返す() {
+        assertEquals("Fizz", FizzBuzz.fizzBuzz(6))
+    }
 }
