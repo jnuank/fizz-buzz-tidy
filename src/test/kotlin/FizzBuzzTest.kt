@@ -34,5 +34,10 @@ class FizzBuzzTest {
         fun 数字5() {
             assertEquals("Buzz", FizzBuzz.fizzBuzz(5))
         }
+
+        @Test
+        fun 数字10() {
+            assertEquals("Buzz", FizzBuzz.fizzBuzz(10))
+        }
     }
 }
